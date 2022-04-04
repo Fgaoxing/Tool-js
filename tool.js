@@ -1,7 +1,7 @@
 function MirrorProtection(url) {
-	var uri = window.location.href;
+	var uri = window.location.protocol+'//'+document.domain;
 	console.log();
-	if (uri.includes(url)) {
+	if (uri===url) {
 	console.log('网址验证成功');
 	}else{
 	console.log('发现镜像站！！！');
