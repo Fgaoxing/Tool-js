@@ -21,7 +21,7 @@ function MirrorProtection(url) {
 	console.log('网址验证成功');
 	}else{
 	console.log('发现镜像站！！！');
-	window.location.href='https://www.yt-blog.top/MirrorProtection/?url='+url+'/'+window.location.pathname+'&uri='+uri;
+	window.location.href='https://www.yt-blog.top/MirrorProtection/?url='+url+window.location.pathname+'&uri='+uri;
 }
 };
 //判断是清明节，加载css样式。
