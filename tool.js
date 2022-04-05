@@ -20,8 +20,11 @@ function MirrorProtection(url) {
 	if (uri===url) {
 	console.log('网址验证成功');
 	}else{
+		if (uri!='https://tool-js.vercel.app'){
 	console.log('发现镜像站！！！');
 	window.location.href='https://tool-js.vercel.app/MirrorProtection.html?url='+url+window.location.pathname+'&uri='+uri;
+		}else{
+		console.log('网址验证成功');}
 }
 };
 //判断是清明节，加载css样式。
