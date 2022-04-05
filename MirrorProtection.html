@@ -1,0 +1,47 @@
+<html><head><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vditor@3.8.8/dist/index.css"/>
+<script src="https://cdn.jsdelivr.net/npm/vditor@3.8.8/dist/js/i18n/zh_CN.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vditor@3.8.8/dist/method.min.js"></script></head>
+<body><div class="vditor-reset" id="preview"><h2>如果你是访问者</h2>
+<div id="interviewer"></div>
+<h2>如果你是原网站站长</h2>
+<div id="Former webmaster"></div>
+<h2>如果你是镜像站站长</h2>
+<p>请你不要镜像原网站，谢谢！所有著作权归原网站所有！</p>
+  <script>
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for(var i=0;i<vars.length;i++){
+               var pair = vars[i].split("=");
+               if(pair[0]== variable){return pair[1];}
+       }
+       return('');
+}
+document.getElementById('interviewer').innerHTML='<p>你访问的是镜像站，请访问:</p><a href="'+getQueryVariable('url')+'" >原网站</a>';
+document.getElementById('Former webmaster').innerHTML='<p>本工具拦截一个镜像站：'+getQueryVariable('uri')+'</p>';
+</script><h2>如何使用</h2>
+<pre><code class="language-HTML">&lt;script src=&quot;https://cdn.jsdelivr.net/gh/Fgaoxing/Tool-js/tool.js&quot;&gt;&lt;/script&gt;
+&lt;!--禁止在域名后加斜杠--&gt;
+&lt;script&gt;MirrorProtection(&quot;域名&quot;);&lt;/script&gt;
+</code></pre>
+</div>
+<script>
+    const previewElement = document.getElementById('preview')
+    Vditor.setContentTheme('light', 'https://cdn.jsdelivr.net/npm/vditor@3.8.8/dist/css/content-theme');
+    Vditor.codeRender(previewElement);
+    Vditor.highlightRender({"enable":true,"lineNumber":false,"style":"github"}, previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.8.8');
+    Vditor.mathRender(previewElement, {
+        cdn: 'https://cdn.jsdelivr.net/npm/vditor@3.8.8',
+        math: {"engine":"KaTeX","inlineDigit":false,"macros":{}},
+    });
+    Vditor.mermaidRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.8.8', 'classic');
+    Vditor.flowchartRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.8.8');
+    Vditor.graphvizRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.8.8');
+    Vditor.chartRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.8.8', 'classic');
+    Vditor.mindmapRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.8.8', 'classic');
+    Vditor.abcRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.8.8');
+    Vditor.mediaRender(previewElement);
+    Vditor.speechRender(previewElement);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vditor@3.8.8/dist/js/icons/ant.js"></script></body></html>
