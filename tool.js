@@ -45,10 +45,6 @@ function lantern(){
     if(date.getMonth()<2){
         document.getElementsByTagName('head')[0].innerHTML += '<script src="https://api.vvhan.com/api/denglong"><script>'
 }};
-        var head = document.getElementsByTagName('head')[0] ;
-        head.appendChild(styleNode);
-    }
-})();
 
 // url参数获取
 function getQueryVariable(variable,err)
