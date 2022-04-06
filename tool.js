@@ -1,3 +1,11 @@
+//只通过允许的url跳转
+function RestrictedPass(url){
+	if (document.referrer.indexOf(url) < -1){
+		window.location.href = document.referrer
+	}else{
+		console.log('允许跳转');
+	}
+};
 
 //url替换
 function UrlChange(head,footer,change,out) {
