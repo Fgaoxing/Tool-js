@@ -38,3 +38,10 @@ lantern()
 Memorial()
 ```
 国家公祭日时，网站变灰
+
+### TombSweepingDay
+
+```JavaScript
+TombSweepingDay()
+```
+清明节时，网站变灰
