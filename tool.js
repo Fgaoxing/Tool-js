@@ -9,6 +9,7 @@ function RestrictedPass(url){
 
 //url替换
 function UrlChange(head,footer,change,out) {
+	window.onload=function (){
 	for (n in document.getElementsByTagName('a')){
 		if (document.getElementsByTagName('a')[Number(n)].href.indexOf('javascript:') < 0){ 
 		if (document.getElementsByTagName('a')[Number(n)].href.indexOf(out) < 0){ 
@@ -19,7 +20,7 @@ function UrlChange(head,footer,change,out) {
 		}
 		}
 		}
-}
+}}
 };
 
 function MirrorProtection(url) {
