@@ -66,5 +66,6 @@ UrlChange(head,footer,change,out)
 | head | footer | change | out |
 | --- | --- | --- | --- |
 | 加在url前面 | 加在url后面 | url时候转换为Url编码(true/false) | 不转换关键字，包含关键字，则会保持原有url |
+
 ** javascript: 不会转换 **
 ** 并未排除当前网站链接 **
