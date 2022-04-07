@@ -58,14 +58,13 @@ RestrictedPass(url)
 这里是关键字
 如https://tool-js.vercel.app ,只需填写tool-js
 
-### RestrictedPass
+### UrlChUrlChange
 
 ```JavaScript
-RestrictedPass(url)
+UrlChange(head,footer,change,out)
 ```
-| url |
-| --- |
-| 允许跳转网址中的关键字 |
-意味着只有允许的网址才可跳转
-这里是关键字
-如https://tool-js.vercel.app ,只需填写tool-js
+| head | footer | change | out |
+| --- | --- | --- | --- |
+| 加在url前面 | 加在url后面 | url时候转换为Url编码(true/false) | 不转换关键字，包含关键字，则会保持原有url |
+** javascript: 不会转换 **
+** 并未排除当前网站链接 **
