@@ -45,3 +45,27 @@ Memorial()
 TombSweepingDay()
 ```
 清明节时，网站变灰
+
+### RestrictedPass
+
+```JavaScript
+RestrictedPass(url)
+```
+| url |
+| --- |
+| 允许跳转网址中的关键字 |
+意味着只有允许的网址才可跳转
+这里是关键字
+如https://tool-js.vercel.app ,只需填写tool-js
+
+### RestrictedPass
+
+```JavaScript
+RestrictedPass(url)
+```
+| url |
+| --- |
+| 允许跳转网址中的关键字 |
+意味着只有允许的网址才可跳转
+这里是关键字
+如https://tool-js.vercel.app ,只需填写tool-js
