@@ -34,7 +34,7 @@ var Email = {
 	}
 };
 function SendEmail(host,username,password,to,from,subject,body){
-	Email.send(
+	Email.send({
 		Host : host,
 		Username : username,
 		Password : password,
