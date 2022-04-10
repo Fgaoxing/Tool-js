@@ -1,12 +1,18 @@
-<div id='main'></div>
-<script src="https://cdn.jsdelivr.net/gh/Fgaoxing/Tool-js/tool.js"></script>
-<script>
-if (getQueryVariable('run','false')!='false'){
-if (getQueryVariable('du','0')!='360'){
-window.location.href='/turn.html?run=true&url='+getQueryVariable('url','/turn.html')+'&du=0'
-}
-setTimeout("window.location.href='/turn.html?run=true&url='+getQueryVariable('url','/turn.html')+'&du='+String(Number(getQueryVariable('du','0'))+1)",10000);
-}else{
-document.getElementById('main').innerHTML='<iframe src="'+getQueryVariable('url','/turn.html')+'" height="100%" frameborder="no" border="0" width="100%" style="transform:rotate('+getQueryVariable('du','0')+'deg);-webkit-transform:rotate('+getQueryVariable('du','0')+'deg);-moz-transform:rotate('+getQueryVariable('du','0')+'deg);-o-transform:rotate('+getQueryVariable('du','0')+'deg);-mz-transform:rotate('+getQueryVariable('du','0')+'deg);"> </iframe>'
-}
-</script>
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<div id='main'></div>
+		<script src="https://cdn.jsdelivr.net/gh/Fgaoxing/Tool-js/tool.js"></script>
+		<script>
+			if (getQueryVariable('run','false')!='false'){
+						if (getQueryVariable('du','0')!='360'){
+						window.location.href='/turn.html?run=true&url='+getQueryVariable('url','/turn.html')+'&du=0'
+						}
+						setTimeout("window.location.href='/turn.html?run=true&url='+getQueryVariable('url','/turn.html')+'&du='+String(Number(getQueryVariable('du','0'))+1)",10000);
+						}else{
+						document.getElementById('main').innerHTML='<iframe src="'+getQueryVariable('url','/turn.html')+'" height="100%" frameborder="no" border="0" width="100%" style="transform:rotate('+getQueryVariable('du','0')+'deg);-webkit-transform:rotate('+getQueryVariable('du','0')+'deg);-moz-transform:rotate('+getQueryVariable('du','0')+'deg);-o-transform:rotate('+getQueryVariable('du','0')+'deg);-mz-transform:rotate('+getQueryVariable('du','0')+'deg);"> </iframe>'
+						}
+		</script>
+	</body>
+</html>
