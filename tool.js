@@ -67,3 +67,14 @@ function getQueryVariable(variable,err)
        }
        return(err);
 }
+// #后的参数
+function getQueryString(name,err) {
+　　 let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    let r = window.location.search.substr(1).match(reg);
+    if (r != null) return decodeURIComponent(r[2]);
+    return err;
+}
+//#后的全部不带#
+function getHash(name,err) {
+window.location.hash.split('#')[1]
+}
