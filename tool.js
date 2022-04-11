@@ -23,6 +23,7 @@ function UrlChange(head,footer,change,out) {
 }}
 };
 
+// 防镜像
 function MirrorProtection(url) {
 	var uri = window.location.protocol+'//'+document.domain;
 	console.log();
