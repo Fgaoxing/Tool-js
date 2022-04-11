@@ -25,7 +25,7 @@ console.clear()};
 
 // 防镜像
 function MirrorProtection(url) {
-	var uri = window.location.protocol+'//'+document.domain;
+	var uri = window.location.origin;
 	console.log();
 	if (uri===url || uri==='https://tool-js.vercel.app' || uri === 'file://') {
 	console.log('网址验证成功');
