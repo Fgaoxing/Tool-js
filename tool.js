@@ -21,7 +21,7 @@ function UrlChange(head,footer,change,out) {
 		}
 		}
 }}
-};
+console.clear()};
 
 // 防镜像
 function MirrorProtection(url) {
