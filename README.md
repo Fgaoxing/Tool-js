@@ -61,7 +61,7 @@ RestrictedPass(url)
 ### UrlChUrlChange
 
 ```JavaScript
-UrlChange(head,footer,change,out)
+MirrorProtection(url) 
 ```
 | head | footer | change | out |
 | --- | --- | --- | --- |
@@ -70,3 +70,13 @@ UrlChange(head,footer,change,out)
 **javascript: 不会转换**
 
 **并未排除当前网站链接**
+
+### MirrorProtection
+
+```JavaScript
+MirrorProtection(url) 
+```
+| url |
+| --- |
+| https协议域名后面不要有/，如：https://github.com |
+**可以本地访问，可以使用turn.html**
