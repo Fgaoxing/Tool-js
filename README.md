@@ -78,5 +78,5 @@ MirrorProtection(url)
 ```
 | url |
 | --- |
-| https协议域名后面不要有/，如：https://github.com |
+| 域名(后面不要有/），如：https://github.com |
 **可以本地访问，可以使用turn.html**
