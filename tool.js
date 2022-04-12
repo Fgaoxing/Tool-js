@@ -76,5 +76,5 @@ function getQueryString(name,err) {
 }
 //#后的全部不带#
 function getHash() {
-return window.location.hash.split('#')[1]
+	return window.location.hash.split('#')[1]
 }
