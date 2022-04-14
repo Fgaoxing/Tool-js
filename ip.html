@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IP封禁</title>
+    <link href="/logo/%E9%80%8F%E6%98%8E.png" rel="shortcut icon">
+</head>
+<body>
+<center>
+    <h1>
+        您的ip被封禁
+    </h1>
+    <style>
+        input.qexo-friend-input {
+            flex: 110%;
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 1.25rem + 2px);
+            padding: 0.625rem 0.75rem;
+            font-weight: 400;
+            color: #8898aa;
+            box-shadow: 0 3px 2px rgb(233 236 239 / 5%);
+            transition: all 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            overflow: visible;
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 0.375rem;
+        }
+
+        button.qexo-friend-button {
+            cursor: pointer;
+            position: relative;
+            text-transform: none;
+            transition: all 0.15s ease;
+            letter-spacing: 0.025em;
+            font-size: 0.875rem;
+            will-change: transform;
+            color: #fff;
+            background-color: #5e72e4;
+            border-color: #5e72e4;
+            box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 0.625rem 1.25rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/Fgaoxing/Tool-js/tool.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fgaoxing/Tool-js/email.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" rel="stylesheet">
+    <script>
+        const notyf = new Notyf({position: {x: 'right', y: 'top',}});
+
+        function openip(value) {
+            var txet = '<p>' + getQueryVariable('ip', '') + '申请访问你的网站</p><a href="mailto:' + value + '"><p>申请者邮箱:' + value + '</p><a><br><small>send by yt-smtp</small>'
+            Email.send({
+                Host: 'smtp.office365.com',
+                Username: 'yt-blog-stmp@outlook.com',
+                Password: 'Fhm100206',
+                To: getQueryVariable('email', ''),
+                From: 'yt-blog-stmp@outlook.com',
+                Subject: 'IP解禁请求',
+                Body: txet
+            }).then(
+                notyf.success('发送成功')
+            )
+        }</script>
+    <input class="qexo-friend-input" id="qexo_friend_name" placeholder="email" type="email"><br>
+    <button class="qexo-friend-button" onclick="javascript:openip(document.getElementById('qexo_friend_name').value);"
+            type="button">申请访问
+    </button>
+    </div></center>
+</body>
+</html>
