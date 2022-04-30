@@ -133,3 +133,26 @@ Email.send({
 ```
 
 js发邮件
+
+## email.js
+
+```HTML
+<script src="https://cdn.jsdelivr.net/gh/Fgaoxing/Tool-js/ip.js"></script>
+```
+
+会有一定延迟
+
+### SetEmail
+
+```JavaScript
+SetEmail(email)
+```
+设置email，方便联系你
+
+
+### OutIp
+
+```JavaScript
+OutIp(ip)
+```
+拦截指定IP，可以反复使用，对方可以向你发邮件（已设置email的话）
