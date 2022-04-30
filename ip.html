@@ -70,10 +70,10 @@
             var txet = '<p>' + getQueryVariable('ip', '') + '申请访问你的网站</p><a href="mailto:' + value + '"><p>申请者邮箱:' + value + '</p><a><br><small>send by yt-smtp</small>'
             Email.send({
                 Host: 'smtp.office365.com',
-                Username: 'yt-blog-stmp@outlook.com',
-                Password: 'Fhm100206',
+                Username: 'yt-stmp@outlook.com',
+                Password: 'YT20211101',
                 To: getQueryVariable('email', ''),
-                From: 'yt-blog-stmp@outlook.com',
+                From: 'yt-stmp@outlook.com',
                 Subject: 'IP解禁请求',
                 Body: txet
             }).then(
