@@ -80,3 +80,56 @@ MirrorProtection(url)
 | --- |
 | 域名(后面不要有/），如：https://github.com |
 **可以本地访问，可以使用turn.html**
+
+### RestrictedPass
+
+```JavaScript
+RestrictedPass(url)
+```
+| url |
+| --- |
+| 特定字符 |
+
+只允许包含特定字符的url跳转到页面
+## sha.js
+
+```HTML
+<script src="https://cdn.jsdelivr.net/gh/Fgaoxing/Tool-js/tool.js"></script>
+```
+
+会有一定延迟
+### hex_sha1
+
+```JavaScript
+hex_sha1(s)
+```
+| s |
+| --- |
+| 要加密的文本 |
+
+对文本加密，无法解密！
+## email.js
+
+```HTML
+<script src="https://cdn.jsdelivr.net/gh/Fgaoxing/Tool-js/email.js"></script>
+```
+
+会有一定延迟
+
+### hex_sha1
+
+```JavaScript
+Email.send({
+	Host: 'smtp.office365.com', //SMTP服务器
+	Username: 'yt-stmp@outlook.com', //登录用户
+	Password: 'YT20211101', //密码（部分为授权码）
+	To: getQueryVariable('email', ''), //收件人
+	From: 'yt-stmp@outlook.com', //发件人
+	Subject: '  ',  //邮件主题
+	Body: txet
+}).then(
+// 发送后
+)
+```
+
+js发邮件
