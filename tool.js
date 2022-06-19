@@ -46,7 +46,7 @@ function TombSweepingDay(){
 //判断是国家公祭日12.13，加载css样式。
 function Memorial(){
     var date=new Date();
-    if(date.getMonth()===11&&date.getDate()===31){
+    if(date.getMonth()===11&&date.getDate()===13){
         document.getElementsByTagName('head')[0].innerHTML += '<style type="text/css">html {filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(1);}<style>'
 }};
 //判断是春节，显示小灯笼
