@@ -53,7 +53,7 @@ function Memorial(){
 function lantern(){
     var date=new Date();
     if(date.getMonth()<2){
-        document.getElementsByTagName('head')[0].innerHTML += '<script src="https://api.vvhan.com/api/denglong"><script>'
+        document.getElementsByTagName('head')[0].innerHTML += '<script src="https://api.vvhan.com/api/denglong"></script>'
 }};
 
 // url参数获取
