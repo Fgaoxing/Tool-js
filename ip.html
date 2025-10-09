@@ -1,11 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <title>IP封禁</title>
     <link href="/logo/%E9%80%8F%E6%98%8E.png" rel="shortcut icon">
 </head>
 <body>
-<center>
+<div style="text-align: center;">
     <h1>
         您的ip被封禁
     </h1>
@@ -49,11 +50,9 @@
             border-color: #5e72e4;
             box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
             vertical-align: middle;
-            cursor: pointer;
             user-select: none;
             border: 1px solid transparent;
             padding: 0.625rem 1.25rem;
-            font-size: 0.875rem;
             line-height: 1.5;
             border-radius: 0.25rem;
             transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -79,11 +78,12 @@
             }).then(
                 notyf.success('发送成功')
             )
-        }</script>
+        }
+    </script>
     <input class="qexo-friend-input" id="qexo_friend_name" placeholder="email" type="email"><br>
     <button class="qexo-friend-button" onclick="javascript:openip(document.getElementById('qexo_friend_name').value);"
             type="button">申请访问
     </button>
-    </div></center>
+</div>
 </body>
 </html>
